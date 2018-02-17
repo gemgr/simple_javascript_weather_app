@@ -6,22 +6,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Simple Javascript/jQuery Weather App with Open Weather Map API</title>
+  <title>Weather App | Apps | George Moustakas - Web Developer / Software Engineer</title>
 
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+  <link rel="stylesheet" href="assets/css/bulma.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 
 <body>
+  <!-- Search Form -->
+  <section class="hero has-text-centered is-custom-hero-header">
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column">
+          <div class="field is-custom-hero-content">
+            <p class="control has-icons-right">
+              <input class="input is-custom-form-input-text search" type="text" placeholder="City Name. e.g Athens, GR">
+              <span class="icon is-small is-custom-color-icon-check is-right">
+                <i class="fas fa-check"></i>
+              </span>
+              <span class="icon is-small is-custom-color-icon-ban is-right">
+                <i class="fas fa-ban"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
+    </div>
+  </section>
 
-  <div class="weather">
-    Location: <span class="city"></span> <br> Temprature: <span class="temp"></span> °C
+  <!-- Content Display -->
+  <div class="container">
+    <div class="columns">
+
+      <!-- Default Weather Cities -->
+      <div class="column">
+        <!-- TODO: Build Default Weather Locations -->
+      </div>
+
+      <!-- Users Location Weather Data -->
+      <div class="column">
+        <div class="tile is-custom-tile is-vertical">
+          <article class="tile is-child notification">
+            <p class="location_info ">
+              <ul class="has-text-centered">
+                <li class="location_name">City: <strong><span id="location_name"></span></strong></li>
+                <li class="location_temp">Temprature: <strong><span id="location_temp"></span> °C</strong></li>
+                <li class="location_temp_max">Max Temprature: <strong><span id="location_temp_max"></span> °C</strong></li>
+                <li class="location_temp_min">Min Temprature: <strong><span id="location_temp_min"></span> °C</strong></li>
+              </ul>
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Default Weather Cities -->
+      <div class="column">
+        <!-- TODO: Build Default Weather Locations -->
+        <div class="notification is-custom-notification">
+          <button class="delete"></button>
+          <p>Your Location was found!</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <!-- Footer -->
+  <span class="footer_push"></span>
+  <footer class="footer is-custom-footer">
+    <div class="">
+      <div class="content">
+        <div class="columns">
+          <div class="column"></div>
+          <div class="column"></div>
+          <div class="column">
+            <div class="field is-grouped">
+
+              <!-- Facebook -->
+              <p class="control">
+                <a class="button is-custom-button-social" href="https://www.facebook.com/george.moustakas.3">
+                    <span class="icon">
+                      <i class="fab  fa-facebook-f "></i>
+                    </span>
+                  </a>
+              </p>
+
+              <!-- Twitter -->
+              <p class="control">
+                <a class="button is-custom-button-social" href="https://twitter.com/george_mou">
+                    <span class="icon">
+                      <i class="fab  fa-twitter"></i>
+                    </span>
+                  </a>
+              </p>
+
+              <!-- Instagram -->
+              <p class="control">
+                <a class="button is-custom-button-social" href="https://www.instagram.com/george_moustakas/">
+                    <span class="icon">
+                      <i class="fab  fa-instagram"></i>
+                    </span>
+                  </a>
+              </p>
+
+              <!-- GitHub -->
+              <p class="control">
+                <a class="button is-custom-button-social" href="https://github.com/gemgr">
+                    <span class="icon">
+                      <i class="fab  fa-github"></i>
+                    </span>
+                  </a>
+              </p>
+
+              <!-- LinkedIn -->
+              <p class="control">
+                <a class="button is-custom-button-social" href="https://www.linkedin.com/in/georgemou/">
+                    <span class="icon">
+                      <i class="fab  fa-linkedin-in"></i>
+                    </span>
+                  </a>
+              </p>
+
+              <!-- Mail -->
+              <p class="control">
+                <a class="button is-custom-button-social" href="mailto:georgemou31@hotmail.com">
+                    <span class="icon">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </a>
+              </p>
+
+            </div>
+          </div>
+          <div class="column"></div>
+          <div class="column"></div>
+        </div>
+
+        <!-- Copyright -->
+        <p class="has-text-centered">
+          Made with <span class="icon is-custom-icon-heart"><i class="fas fa-heart"></i></span> & <span class="icon is-custom-icon-coffe"><i class="fas fa-coffee "></i></span> in Greece <br> By <a href="https://gemgr.github.io/" class="is-custom-footer-link">George Moustakas</a>          &copy; <span id="copyright"></span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    // Get the copyright year automatically. Cause automation is life!!
+    document.getElementById("copyright").innerHTML = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,118 @@
+/*
+*
+*  Generic CSS Styles
+*
+*/
+
+body, html {
+  display: flex;
+  min-height: calc(100vh - 0px);
+  flex-direction: column;
+  background-image: url("../image/default_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/*
+*
+*  Helper CSS classes for elements
+*
+*/
+
+.footer_push {
+  flex: 1;
+}
+
+/*
+*
+*  Custom is-custom classes for elements
+*
+*/
+
+.is-custom-button-social {
+  background-color: transparent;
+  color: rgba(255, 252, 240, .99);
+  border-radius: 50px;
+  border: 2px solid rgba(255, 201, 82, .99);
+  transition: all .3s ease-in-out;
+}
+
+.is-custom-button-social:hover {
+  color: rgba(255, 201, 82, .99);
+  border-color: rgba(255, 116, 115, .99);
+}
+
+.is-custom-hero-header {
+  background-color: transparent;
+}
+
+.is-custom-form-input-text {
+  background-color: rgba(0, 78, 102, .7);
+  color: rgba(255, 255, 255, .99);
+  border-radius: 2px;
+  box-shadow: none;
+  text-align: center;
+  border: none;
+}
+
+.is-custom-form-input-text::placeholder {
+  color: rgba(255, 255, 255, .99);
+}
+
+.is-custom-form-input-text:focus {
+  box-shadow: none;
+}
+
+.is-custom-color-icon-check {
+  color: green !important;
+}
+
+.is-custom-color-icon-ban {
+  color: red !important;
+}
+
+.is-custom-notification {
+  background-color: rgba(0, 78, 102, .7);
+  color: rgba(255, 252, 240, .99);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.is-custom-tile {
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.is-custom-tile article.tile {
+  background-color: rgba(0, 78, 102, .7);
+  color: rgba(255, 252, 240, .99);
+}
+
+.is-custom-footer {
+  background-color: rgba(0, 78, 102, .7);
+  color: rgba(255, 252, 240, .99);
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.is-custom-icon-heart {
+  color: rgba(255, 116, 115, .99);
+}
+
+.is-custom-icon-coffe {
+  color: rgba(249, 212, 35, .99);
+}
+
+.is-custom-footer-link {
+  color: rgba(73, 10, 61, .99);
+  transition: all .2s ease-in-out;
+}
+
+.is-custom-footer-link:hover {
+  color: rgba(249, 212, 35, .99);
+}
