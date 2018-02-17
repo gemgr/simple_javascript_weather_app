@@ -5,6 +5,8 @@
 
 ## Live Demo: [gemgr.github.io/app/weather/](https://gemgr.github.io/app/weather/)
 
+![](https://gemgr.github.io/app/thumbnails/weather_app.png)
+
 # About the app:
 The app uses [Open Weather Map](https://openweathermap.org/) to retrieve the current weather for the city you requested, and all of that in **Real-Time** as your write the name of the city the app retrives the wheather.
 
