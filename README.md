@@ -1,7 +1,11 @@
-![Made with Bulma](https://bulma.io/images/made-with-bulma--semiblack.png) |<a href='https://ko-fi.com/Z8Z19DMP' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+![Made with Bulma](https://bulma.io/images/made-with-bulma--semiblack.png) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgemgr%2Fsimple_javascript_weather_app.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgemgr%2Fsimple_javascript_weather_app?ref=badge_shield)
+|<a href='https://ko-fi.com/Z8Z19DMP' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 ------------ | -------------
 
 # Published under the [MIT](https://github.com/gemgr/simple_javascript_weather_app/blob/master/LICENSE) Licence
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgemgr%2Fsimple_javascript_weather_app.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgemgr%2Fsimple_javascript_weather_app?ref=badge_large)
 
 ## Live Demo: [gemgr.github.io/app/weather/](https://gemgr.github.io/app/weather/)
 
