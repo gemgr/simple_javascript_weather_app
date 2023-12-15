@@ -32,6 +32,6 @@ function checkStuff() {
 
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'static/js/json/particles.json', function() {
+particlesJS.load('particles-js', 'https://raw.githubusercontent.com/gemgr/simple_javascript_weather_app/master/assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
