@@ -1,0 +1,115 @@
+:root {
+  --main-color: #0C1D4D;
+  --main-color-dark: #F9B52C;
+  --main-color-light: #5872f5;
+  --text-color: #cfcde7;
+}
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--main-color);
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container{
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-color);
+  border-radius: 9px;
+  border-top: 10px solid var(--main-color-dark);
+  border-bottom: 10px solid var(--main-color-dark);
+  width: max-content;
+  height: max-content;
+  padding: 2rem;
+  box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
+}
+
+.logo{
+  width: 20rem;
+}
+
+.box h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #a1a4ad;
+  letter-spacing: 1.5px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.box input[type = "text"],.box input[type = "password"] {
+  display: block;
+  margin: 20px auto;
+  background: #262e49;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 320px;
+  outline: none;
+  color: #d6d6d6;
+      -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  
+}
+::-webkit-input-placeholder {
+  color: #565f79;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus {
+  border: 1px solid #79A6FE;
+  
+}
+
+a{
+  color: #5c7fda;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn1 {
+  border:0;
+  background: var(--main-color-light);
+  color: #dfdeee;
+  border-radius: 100px;
+  width: 200px;
+  height: 45px;
+  margin-top: 2rem;
+  font-size: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn1:hover {
+  background: var(--main-color-dark);
+}
+
+.error {
+  background: var(--main-color-dark);
+  padding: .5rem;
+  text-align: center;
+  width: 320px;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px auto 10px;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  color: var(--main-color);
+  display: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
